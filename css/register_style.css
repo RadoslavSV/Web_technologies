@@ -1,0 +1,114 @@
+body {
+    background-color: #65b1d7;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans Unicode';
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 132);
+    text-decoration: none;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid rgb(255, 255, 132);
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgb(255, 255, 213);
+    border-color: white;
+    color: #333;
+}
+
+h3 {
+    text-align: center;
+}
+
+#headline1 {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+#headline2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.registration_form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #333;
+    background-color: #aedef4;
+    margin-bottom: 15px;
+}
+
+.form_group {
+    margin-bottom: 5px;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 96%;
+    padding: 5px;
+}
+
+button[type="reg_btn"] {
+    font-size: 14px;
+    background-color: #467b96;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #65b1d7;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-top: 18px;
+}
+
+button[type="reg_btn"]:hover {
+    background-color: #65b1d7;
+    border-color: white;
+    color: #333;
+}
+
+#usernameError, #emailError, #passwordError {
+    color: rgb(240, 0, 0);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.successfulRegistration {
+    color: rgb(0, 100, 0);
+    font-weight: bold;
+    padding-left: 43%;
+}

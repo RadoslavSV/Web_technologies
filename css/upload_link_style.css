@@ -1,0 +1,132 @@
+body {
+    background-color: #65b1d7;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans Unicode';
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#headline1 {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+#headline2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 132);
+    text-decoration: none;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid rgb(255, 255, 132);
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: rgb(255, 255, 132);
+    color: #333;
+}
+
+#balance {
+    display: flex;
+    align-self: flex-start;
+    padding-left: 5px;
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+}
+
+#assignLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+
+#assignLink,
+#assignTooltip,
+#assignLink2,
+#assignTooltip2 {
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #333;
+    background-color: #aedef4;
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    width: 96%;
+    padding: 5px;
+}
+
+#operationResult {
+    color: black;
+    font-weight: bold;
+    padding-left: 635px;
+    padding-bottom: 15px;
+}
+
+#updateButton, 
+#updateTooltipButton, 
+#updateSecondButton, 
+#updateSecondTooltipButton {
+    font-size: 14px;
+    background-color: #467b96;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #65b1d7;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-top: 18px;
+}
+
+#updateButton:hover, 
+#updateTooltipButton:hover, 
+#updateSecondButton:hover, 
+#updateSecondTooltipButton:hover {
+    background-color: #65b1d7;
+    border-color: white;
+    color: #333;
+}
