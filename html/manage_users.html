@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Technologies - Million Dollar Project</title>
+        <link rel="stylesheet" type="text/css" href="../css/manage_users_style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 id="headline1">Million Dollar Project</h1>
+            <h2 id="headline2">Web Technologies</h2>
+            <nav>
+                <ul>
+                    <li><a href="./main_admin.html">Back</a></li>
+                    <li><a href="./index.html">Exit</a></li>
+                </ul>
+            </nav>
+            <span id="balance"></span>
+        </header>
+        <h3>Manage user data</h3>
+        <div class="manage_form">
+            <form action="../php/manage_users.php" method="POST" id="manageUsers">
+                <div class="form_group">
+                    <label for="usernameSelect">Select User</label>
+                    <label for="usernameSelect2" style="font-size: 10px; margin-bottom: 6px;">Format: username | grid_1_id | grid_2_id |</label>
+                    <select id="usernameSelect" name="username"></select>
+                </div>
+                <div class="form_group">
+                    <label for="userBalance">Balance</label>
+                    <input type="text" id="userBalance" name="userBalance">
+                    <span id="balanceError" class="error"></span>
+                </div>
+                <button type="submit" id="updateButton">Update</button>
+                <button type="submit" id="deleteButton">Delete First Grid Data</button>
+                <button type="submit" id="deleteButton2">Delete Second Grid Data</button>
+            </form>
+        </div>
+        <span id="dataChange"></span>
+        <script src="../js/manage_users.js"></script>
+    </body>
+</html>

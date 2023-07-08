@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Technologies - Million Dollar Project</title>
+    <link rel="stylesheet" type="text/css" href="../css/upload_image_style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="headline1">Million Dollar Project</h1>
+        <h2 id="headline2">Web Technologies</h2>
+        <nav>
+            <ul>
+                <li><a href="./main.html">Back</a></li>
+                <li><a href="./index.html">Exit</a></li>
+            </ul>
+        </nav>
+        <span id="balance"></span>
+    </header>
+    <h2>Upload Image</h2>
+    <div style="margin-bottom: 60px;">
+        <form id="uploadForm" method="post" enctype="multipart/form-data">
+            <div class="button-container">
+                <input type="file" name="imageFile" id="imageFile" accept="image/png">
+                <br>
+                <button type="button" onclick="uploadImage()" id="uploadButton">Upload</button>
+            </div>
+        </form>
+    </div>
+    <h2>Upload Second Image</h2>
+    <div>
+        <form id="uploadSecondForm" method="post" enctype="multipart/form-data">
+            <div class="button-container">
+                <input type="file" name="secondImageFile" id="secondImageFile" accept="image/png">
+                <br>
+                <button type="button" onclick="uploadSecondImage()" id="uploadSecondButton">Upload</button>
+            </div>
+        </form>
+    </div>
+    <span id="operationResult"></span>
+    <script src="../js/upload_image.js"></script>
+</body>
+</html>

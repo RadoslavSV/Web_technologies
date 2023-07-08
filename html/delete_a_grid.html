@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Technologies - Million Dollar Project</title>
+        <link rel="stylesheet" type="text/css" href="../css/manage_users_style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+    <header>
+        <h1 id="headline1">Million Dollar Project</h1>
+        <h2 id="headline2">Web Technologies</h2>
+        <nav>
+            <ul>
+                <li><a href="./main_admin.html">Back</a></li>
+                <li><a href="./index.html">Exit</a></li>
+            </ul>
+        </nav>
+        <span id="balance"></span>
+    </header>
+    <h3>Delete a grid</h3>
+    <div class="manage_form">
+        <form id="deleteGridForm">
+            <label for="gridId">Grid ID</label>
+            <input type="number" id="gridId" name="gridId" style="width: 96%; padding: 5px; font-size: 16px;" required>
+            <button type="submit" id="delButton">Delete Grid</button>
+        </form>
+    </div>
+    <span id="dataChange"></span>
+    <script src="../js/delete_a_grid.js"></script>
+    </body>
+</html>

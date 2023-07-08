@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Technologies - Million Dollar Project</title>
+        <link rel="stylesheet" type="text/css" href="../css/upload_link_style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+    <header>
+        <h1 id="headline1">Million Dollar Project</h1>
+        <h2 id="headline2">Web Technologies</h2>
+        <nav>
+            <ul>
+                <li><a href="./main.html">Back</a></li>
+                <li><a href="./index.html">Exit</a></li>
+            </ul>
+        </nav>
+        <span id="balance"></span>
+    </header>
+    <div id="assignLinks">
+        <div class="column">
+            <h3>Assign a hyperlink to the first grid</h3>
+            <div id="assignLink">
+                <input type="text" id="linkField" placeholder="Enter hyperlink">
+                <button id="updateButton">Assign link</button>
+            </div>
+            <h3>Assign a tooltip to the first grid</h3>
+            <div id="assignTooltip">
+                <input type="text" id="tooltipField" placeholder="Enter tooltip">
+                <button id="updateTooltipButton">Assign tooltip</button>
+            </div>
+        </div>
+        <div class="column">
+            <h3>Assign a hyperlink to the second grid</h3>
+            <div id="assignLink2">
+                <input type="text" id="linkField2" placeholder="Enter hyperlink">
+                <button id="updateSecondButton">Assign link</button>
+            </div>
+            <h3>Assign a tooltip to the second grid</h3>
+            <div id="assignTooltip2">
+                <input type="text" id="tooltipField2" placeholder="Enter tooltip">
+                <button id="updateSecondTooltipButton">Assign tooltip</button>
+            </div>
+        </div>
+    </div>
+    <span id="operationResult"></span>
+    <script src="../js/upload_link.js"></script>
+    </body>
+</html>

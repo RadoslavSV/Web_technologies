@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Technologies - Million Dollar Project</title>
+        <link rel="stylesheet" type="text/css" href="../css/login_style.css">
+        <script src="../js/login_javascript.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 id="headline1">Million Dollar Project</h1>
+            <h2 id="headline2">Web Technologies</h2>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Main Page</a></li>
+                    <li><a href="./register.html">Register</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h3>Login</h3>
+        <div class="login_form">
+            <form action="../php/login.php" method="POST" onsubmit="return validateForm(this);" id="loginForm">
+                <div class="form_group">
+                    <label for="username/email">Username or email</label>
+                    <input type="text" id="username/email" name="username/email" required>
+                </div>
+                <div class="form_group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="log_btn">Login</button>
+            </form>
+        </div>
+        <span id="unsuccessfulLogin" class="unsuccessfulLogin"></span>
+    </body>
+</html>
